@@ -44,8 +44,8 @@ int main ( int argc, char *argv[] )
 	    return -1;
 	}
 
-    cvtGray(image);
-    cvtRGB2YV12(image);
+        cvtGray(image);
+        cvtRGB2YV12(image);
 
 	/*-----------------------------------------------------------------------------
 	 *  create one window that called by test_cv
