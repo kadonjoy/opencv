@@ -18,14 +18,14 @@ int main(int argc, char** argv)
 {
     std::string src_path = "2976x3968.jpg";
     char dst_file_name[20]; 
-//    int resize_height = 3584;
-//    int resize_width = 2016;
     cv::Mat src = cv::imread(src_path); 
-    sprintf(dst_file_name, "%dx%d_dst.jpg", src.cols/2, src.rows/2);
+    int resize_height = src.rows/4;
+    int resize_width = src.cols/4;
+    sprintf(dst_file_name, "%dx%d_dst.jpg", resize_width, resize_height);
     cv::Mat dst;
     imshow("src", src);
     // downscale to 1/2 size
-    cv::resize(src, dst, cv::Size(src.cols/2, src.rows/2), 0, 0, cv::INTER_LINEAR);
+    cv::resize(src, dst, cv::Size(resize_width, resize_height), 0, 0, cv::INTER_LINEAR);
     imshow("dst", dst);
     imwrite(dst_file_name, dst);
     cv::waitKey(0);
