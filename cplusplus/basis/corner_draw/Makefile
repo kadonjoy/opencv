@@ -72,7 +72,7 @@ GLOBAL_INC_DIR  = /usr/local/include
 LOCAL_INC_DIR   = $(HOME)/include
 
 # ------------  system libraries  (e.g. -lm )  ---------------------------------
-SYS_LIBS        = -lm -lopencv_core -lopencv_highgui -lopencv_imgproc
+SYS_LIBS        = -lm -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_calib3d -lopencv_imgproc -lopencv_features2d
 
 # ------------  additional system library directories  -------------------------
 GLOBAL_LIB_DIR  =

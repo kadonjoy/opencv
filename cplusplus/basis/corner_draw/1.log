@@ -1,0 +1,1859 @@
+g++ -c -Wall -ansi -pedantic -O3 -I/home/xiashy/include -I/usr/local/include main_corner.cpp
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’:
+/usr/include/c++/4.8/bits/stl_algo.h:2211:62:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:5462:47:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+main_corner.cpp:42:46:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+    if (*__i < *__first)
+             ^
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2137:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    if (*__i < *__first)
+             ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’:
+/usr/include/c++/4.8/bits/stl_algo.h:5308:51:   required from ‘void std::partial_sort(_RAIter, _RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:2310:60:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Size = long int]’
+/usr/include/c++/4.8/bits/stl_algo.h:5461:36:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+main_corner.cpp:42:46:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+  if (*__i < *__first)
+           ^
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:1935:11: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+  if (*__i < *__first)
+           ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘void std::__move_median_to_first(_Iterator, _Iterator, _Iterator, _Iterator) [with _Iterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’:
+/usr/include/c++/4.8/bits/stl_algo.h:2282:74:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:2315:54:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Size = long int]’
+/usr/include/c++/4.8/bits/stl_algo.h:5461:36:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+main_corner.cpp:42:46:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+       if (*__a < *__b)
+                ^
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:85:16: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       if (*__a < *__b)
+                ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+    if (*__b < *__c)
+             ^
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:87:13: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    if (*__b < *__c)
+             ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+    else if (*__a < *__c)
+                  ^
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:89:18: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    else if (*__a < *__c)
+                  ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+       else if (*__a < *__c)
+                     ^
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:94:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       else if (*__a < *__c)
+                     ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+       else if (*__b < *__c)
+                     ^
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:96:21: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+       else if (*__b < *__c)
+                     ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h: In instantiation of ‘_RandomAccessIterator std::__unguarded_partition(_RandomAccessIterator, _RandomAccessIterator, const _Tp&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Tp = cv::Point_<float>]’:
+/usr/include/c++/4.8/bits/stl_algo.h:2283:70:   required from ‘_RandomAccessIterator std::__unguarded_partition_pivot(_RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:2315:54:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Size = long int]’
+/usr/include/c++/4.8/bits/stl_algo.h:5461:36:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+main_corner.cpp:42:46:   required from here
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘const cv::Point_<float>’)
+    while (*__first < __pivot)
+                    ^
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2242:20: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    while (*__first < __pivot)
+                    ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: error: no match for ‘operator<’ (operand types are ‘const cv::Point_<float>’ and ‘cv::Point_<float>’)
+    while (__pivot < *__last)
+                   ^
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/algorithm:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_algo.h:2245:19: note:   ‘const cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    while (__pivot < *__last)
+                   ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘const cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘const cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘const cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘const cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘const cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h: In instantiation of ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Distance = long int; _Tp = cv::Point_<float>]’:
+/usr/include/c++/4.8/bits/stl_heap.h:407:71:   required from ‘void std::make_heap(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:1933:39:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:5308:51:   required from ‘void std::partial_sort(_RAIter, _RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+/usr/include/c++/4.8/bits/stl_algo.h:2310:60:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >; _Size = long int]’
+/usr/include/c++/4.8/bits/stl_algo.h:5461:36:   required from ‘void std::sort(_RAIter, _RAIter) [with _RAIter = __gnu_cxx::__normal_iterator<cv::Point_<float>*, std::vector<cv::Point_<float> > >]’
+main_corner.cpp:42:46:   required from here
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: error: no match for ‘operator<’ (operand types are ‘cv::Point_<float>’ and ‘cv::Point_<float>’)
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note: candidates are:
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note: template<class _T1, class _T2> bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_pair.h:220:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::pair<_T1, _T2>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:297:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:347:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2569:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2581:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8/ios:42,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from main_corner.cpp:14:
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2593:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   mismatched types ‘const _CharT*’ and ‘cv::Point_<float>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/map:60:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_tree.h:917:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/map:61:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_map.h:979:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/map:62:0,
+                 from /usr/local/include/opencv2/core/core.hpp:60,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_multimap.h:881:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from /usr/local/include/opencv2/core/core.hpp:63,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/4.8/bits/stl_vector.h:1421:5: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/4.8/bits/stl_algo.h:61:0,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from main_corner.cpp:15:
+/usr/include/c++/4.8/bits/stl_heap.h:235:35: note:   ‘cv::Point_<float>’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+    if (*(__first + __secondChild) < *(__first + (__secondChild - 1)))
+                                   ^
+In file included from /usr/local/include/opencv2/core/core.hpp:4856:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note: bool cv::operator<(const cv::MatConstIterator&, const cv::MatConstIterator&)
+ operator < (const MatConstIterator& a, const MatConstIterator& b)
+ ^
+/usr/local/include/opencv2/core/mat.hpp:1981:1: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::MatConstIterator&’
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note: cv::MatExpr cv::operator<(double, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (double s, const Mat& a);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1302:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘double’
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note: cv::MatExpr cv::operator<(const cv::Mat&, double)
+ CV_EXPORTS MatExpr operator < (const Mat& a, double s);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1301:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note: cv::MatExpr cv::operator<(const cv::Mat&, const cv::Mat&)
+ CV_EXPORTS MatExpr operator < (const Mat& a, const Mat& b);
+                    ^
+/usr/local/include/opencv2/core/mat.hpp:1300:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::Mat&’
+In file included from /usr/local/include/opencv2/core/core.hpp:4855:0,
+                 from main_corner.cpp:15:
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note: bool cv::operator<(const cv::FileNodeIterator&, const cv::FileNodeIterator&)
+ static inline bool operator < (const FileNodeIterator& it1, const FileNodeIterator& it2)
+                    ^
+/usr/local/include/opencv2/core/operations.hpp:3190:20: note:   no known conversion for argument 1 from ‘cv::Point_<float>’ to ‘const cv::FileNodeIterator&’
+make: *** [main_corner.o] 错误 1

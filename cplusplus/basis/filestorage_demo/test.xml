@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<width>1280</width>
+<height>720</height>
+<resultMatrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>u</dt>
+  <data>
+    2 1 1 1 2 1 1 1 2</data></resultMatrix>
+<cameraMatrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1000. 0. 320. 0. 1000. 240. 0. 0. 1.</data></cameraMatrix>
+<distCoeffs type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    1.0000000000000001e-01 1.0000000000000000e-02
+    -1.0000000000000000e-03 0. 0.</data></distCoeffs>
+<calibrationDate>"Thu Mar 29 10:08:47 2018&#x0a;"</calibrationDate>
+</opencv_storage>

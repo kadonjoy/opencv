@@ -35,7 +35,7 @@ PROFILE        := NO
 EXECUTABLE      := main
 
 # ------------  list of all source files  --------------------------------------
-SOURCES         := $(wildcard *.cpp)
+SOURCES         := main.cpp
 
 # ------------  compiler  ------------------------------------------------------
 CC              := gcc

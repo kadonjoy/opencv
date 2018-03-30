@@ -16,7 +16,7 @@
 
 int main(int argc, char** argv)
 {
-    std::string src_path = "2976x3968.jpg";
+    std::string src_path = "IMG_20180105_034223_0.jpg";
     char dst_file_name[20]; 
     cv::Mat src = cv::imread(src_path); 
     int resize_height = src.rows/4;
